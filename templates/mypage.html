@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}마이페이지{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto">
+    <!-- 프로필 섹션 -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <div class="flex items-center">
+            <div class="w-20 h-20 bg-gray-200 rounded-full mr-6"></div>
+            <div>
+                <h2 class="text-2xl font-bold mb-2">{{ user.name }}</h2>
+                <p class="text-gray-600">{{ user.email }}</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 내가 저장한 꽃 섹션 -->
+    <div class="mb-8">
+        <h3 class="text-xl font-bold mb-4">내가 저장한 꽃</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for flower in saved_flowers %}
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="{{ flower.image_path }}" alt="{{ flower.name }}" 
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        {% for type in flower.types %}
+                        <div class="inline-flex items-center bg-gray-100 rounded-full px-3 py-1 text-sm">
+                            <img src="/static/flower-icons/{{ type.icon }}" 
+                                 class="w-4 h-4 rounded-full mr-2">
+                            <span>{{ type.name }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600 text-sm">{{ flower.date }}</span>
+                        <button class="text-red-500 hover:text-red-600" 
+                                onclick="deleteFlower('{{ flower.id }}')">
+                            삭제
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+async function deleteFlower(flowerId) {
+    if (!confirm('정말 삭제하시겠습니까?')) return;
+    
+    try {
+        const response = await fetch(`/flower/${flowerId}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
+        
+        if (response.ok) {
+            // 성공적으로 삭제되면 페이지 새로고침
+            window.location.reload();
+        } else {
+            alert('삭제 중 오류가 발생했습니다.');
+        }
+    } catch (error) {
+        console.error('Error deleting flower:', error);
+        alert('삭제 중 오류가 발생했습니다.');
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,197 @@
+index,name_kr,name_en,mean,dog,cat,color,image
+1,아이스윙 장미,rose icewing,,alert,alert,화이트,rose_icewing
+2,제제벨 장미,rose jezebel,벗어날 수 없는,alert,alert,피치,rose_jezebel
+3,치어플 장미,rose cheerful,열렬한 사랑,alert,alert,레드,rose_cheerful
+4,굿무드 장미,rose goodmood,나의 마음 그대만이 아네,alert,alert,연핑크,rose_goodmood
+5,쉬라즈 장미,rose shiraz,,alert,alert,코랄,rose_shiraz
+6,스위트피,sweet pea,나를 기억해주세요,alert,alert,보라,sweet_pea_purple
+7,스위트피,sweet pea,나를 기억해주세요,alert,alert,화이트,white
+8,스위트피,sweet pea,나를 기억해주세요,alert,alert,크림옐로우,sweet_pea_creamyellow
+9,스위트피,sweet pea,나를 기억해주세요,alert,alert,라벤더,sweet_pea_lavender
+10,스위트피,sweet pea,나를 기억해주세요,alert,alert,피치,sweet_pea_peach
+11,스위트피,sweet pea,나를 기억해주세요,alert,alert,연파랑,sweet_pea_skyblue
+12,스위트피,sweet pea,나를 기억해주세요,alert,alert,핑크,sweet_pea_pink
+13,스위트피,sweet pea,나를 기억해주세요,alert,alert,초코(와인),sweet_pea_choco
+14,스위트피,sweet pea,나를 기억해주세요,alert,alert,연주황,sweet_pea_orange
+15,스위트피,sweet pea,나를 기억해주세요,alert,alert,소프트핑크,sweet_pea_softpink.jpg
+16,스토크,gilli flower,역경에도 변하지 않는 사랑,alert,alert,연보라,gilli_flower_babypurple
+17,스토크,gilli flower,역경에도 변하지 않는 사랑,alert,alert,피치,gilli_flower_peach
+18,스토크,gilli flower,역경에도 변하지 않는 사랑,alert,alert,연핑크,gilli_flower_pink
+19,스토크,gilli flower,역경에도 변하지 않는 사랑,alert,alert,화이트,gilli_flower_white
+20,스토크,gilli flower,역경에도 변하지 않는 사랑,alert,alert,연노랑,gilli_flower_yellow
+21,스토크,gilli flower,역경에도 변하지 않는 사랑,alert,alert,보라,gilli_flower_purple
+22,헬레보러스,helleborus,나의 불안함을 진정시켜주세요,alert,alert,겹화이트,helleborus_layerwhite
+23,헬레보러스,helleborus,나의 불안함을 진정시켜주세요,alert,alert,그린,helleborus_green
+24,헬레보러스,helleborus,나의 불안함을 진정시켜주세요,alert,alert,와인,helleborus_wine
+25,헬레보러스,helleborus,나의 불안함을 진정시켜주세요,alert,alert,겹그린,helleborus_layergreen
+26,헬레보러스,helleborus,나의 불안함을 진정시켜주세요,alert,alert,화이트,helleborus_white
+27,양귀비,poppy,"위로, 위란",warning,alert,,poppy
+28,유채꽃,,"쾌활, 희망",warning,warning,노랑,yuche
+29,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,노랑,tulip_yellow
+30,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,레드,tulip_red
+31,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,오렌지,tulip_orange
+32,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,피치,tulip_peach
+33,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,황도,tulip_peach2
+34,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,레드자몽,tulip_redorange
+35,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,진핑크,tulip_pink
+36,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,연핑크,tulip_babypink
+37,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,화이트,tulip_white
+38,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,퍼플,tulip_purple
+39,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,레드그라데이션,tulip_red3
+40,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,그라데이션 옐로우,tulip_yellow2
+41,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,살몬,tulip_salmon
+42,튤립,tulip,당신의 미소엔 햇빛이 있어요,warning,warning,망고,tulip_mango
+43,미모사 아카시아,cootamundra wattle,우정,alert,alert,옐로우,cootamundra_wattle
+44,별튤립,tulip_riverstar,애정과 배려,warning,warning,핑크,star_tulip_pink
+45,별튤립,tulip_riverstar,애정과 배려,warning,warning,화이트,star_tulip_white
+46,버터플라이 라넌큘러스,persian buttercup,화사한 매력,warning,warning,피치핑크,persian_buttercup_peach
+47,버터플라이 라넌큘러스,persian buttercup,화사한 매력,warning,warning,노랑,persian_buttercup_yellow
+48,버터플라이 라넌큘러스,persian buttercup,화사한 매력,warning,warning,레드,persian_buttercup_red
+49,버터플라이 라넌큘러스,persian buttercup,화사한 매력,warning,warning,핑크,persian_buttercup_pink
+50,디디스커스,didiscus,어린 아이,alert,alert,연보라,didiscus_babypurple
+51,디디스커스,didiscus,어린 아이,alert,alert,화이트,didiscus_white
+52,디디스커스,didiscus,어린 아이,alert,alert,핑크,didiscus_pink
+53,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,핑크,ranunculus_pink
+54,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,코랄,ranunculus_coral
+55,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,오렌지,ranunculus_orange
+56,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,화이트,ranunculus_white
+57,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,노랑,ranunculus_yellow
+58,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,연핑크(하노이),ranunculus_babypink_hanoi
+59,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,연핑킁(레이디),ranunculus_babypink_lady
+60,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,진핑크,ranunculus_hotpink
+61,라넌큘러스,ranunculus,당신은 매력적입니다,warning,warning,레드,ranunculus_red
+62,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,블루,hyacinth_blue
+63,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,라벤더,hyacinth_lavender
+64,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,핑크,hyacinth_pink
+65,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,노랑,hyacinth_yellow
+66,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,피치,hyacinth_peach
+67,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,소프트퍼플,hyacinth_softpurple
+68,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,화이트,hyacinth_white
+69,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,와인,hyacinth_wine
+70,히아신스,hyacinth,"유희, 겸손한 사랑",warning,warning,핫핑크,hyacinth_hotpink
+71,프리지아,freesia,당신의 새로운 시작을 응원합니다.,alert,alert,노랑,freesia_yellow
+72,프리지아,freesia,당신의 새로운 시작을 응원합니다.,alert,alert,화이트,freesia_white
+73,프리지아,freesia,당신의 새로운 시작을 응원합니다.,alert,alert,와인,freesia_wine
+74,프리지아,freesia,당신의 새로운 시작을 응원합니다.,alert,alert,다홍,freesia_red
+75,프리지아,freesia,당신의 새로운 시작을 응원합니다.,alert,alert,퍼플,freesia_purple
+76,방울 스카비오사`,oxford scabious,"운치, 사랑을 잃다",alert,alert,믹스,oxford_scabious
+77,방울 스카비오사`,oxford scabious,"운치, 사랑을 잃다",alert,alert,화이트,oxford_scabious_white
+78,방울 스카비오사`,oxford scabious,"운치, 사랑을 잃다",alert,alert,와인,oxford_scabious_wine
+79,방울 스카비오사`,oxford scabious,"운치, 사랑을 잃다",alert,alert,그라데이션 핑크,oxford_scabious_pink
+80,퐁퐁 국화,pom pom chrysanthemum,내 마음은 진심입니다,warning,warning,화이트,pom_pom_chrysanthemum_white
+81,퐁퐁 국화,pom pom chrysanthemum,내 마음은 진심입니다,warning,warning,옐로우,pom_pom_chrysanthemum_yellow
+82,퐁퐁 국화,pom pom chrysanthemum,내 마음은 진심입니다,warning,warning,핑크,pom_pom_chrysanthemum_pink
+83,수선화,narcissus,"자기애, 자존심, 고결",warning,warning,그라데이션 주황(리플리트),narcissus_liplit
+84,수선화,narcissus,"자기애, 자존심, 고결",warning,warning,노랑,narcissus_yellow
+85,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,연핑크,lisiantius_softpink
+86,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,화이트,lisiantius_white
+87,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,피치,lisiantius_peach
+88,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,그린,lisiantius_green
+89,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,연보라,lisiantius_softpurple
+90,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,보라그라데이션,lisiantius_gradienpurple
+91,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,핑크 그라데이션,lisiantius_gradien_pink
+92,프릴 리시안셔서,lisiantius,변치않는 사랑,alert,alert,그레이프,lisiantius_grape
+93,코와니,allium cowanii,"순진,순수",warning,warning,화이트,allium_cowanii_white
+94,하젤 장미,rose hazel,"수줍음, 첫사랑의 고백",alert,alert,피치,rose_hazel_peach
+95,아네모네,anemone,속절없는 사랑,warning,warning,믹스,anemone_mix
+96,아네모네,anemone,속절없는 사랑,warning,warning,파우더혼합,anemone_power_mix
+97,아네모네,anemone,속절없는 사랑,warning,warning,화이트 그라데이션,anemone_gradient_white
+98,아네모네,anemone,속절없는 사랑,warning,warning,블루,anemone_blue
+99,왁스플라워,wax flower,"불로장생, 영원한 사랑",alert,alert,화이트,wax_flower_white
+100,왁스플라워,wax flower,"불로장생, 영원한 사랑",alert,alert,핑크,wax_flower_pink
+101,왁스플라워,wax flower,"불로장생, 영원한 사랑",alert,alert,단풍(그라데이션빨강),wax_flower_gradient_red
+102,왁스플라워,wax flower,"불로장생, 영원한 사랑",alert,alert,초코,wax_flower_choco
+103,스윗핑크 장미,rose sweet pink,영원한 사랑,alert,alert,딥핑크,rose_sweet_pink
+104,크리미에덴 장미,rose creamy eden,,alert,alert,크림,rose_creamy_eden
+105,올라야,white lace flower,우아한 몸짓,warning,warning,화이트,white_lace_flower
+106,맨스필드 파크 장미,rose mansfield park,"영원한 사랑, 달콤한 사랑",alert,alert,핑크,rose_masfield
+107,미니 스파이더 거베라,mini spider gerbera,"신비, 수수께끼",alert,alert,믹스,mini_spider_gerbera_mix
+108,미니 스파이더 거베라,mini spider gerbera,"신비, 수수께끼",alert,alert,핑크,mini_spider_gerbera_pink
+109,아이리스,iris,"좋은 소식, 용기",warning,warning,블루,iris_blue
+110,아이리스,iris,"좋은 소식, 용기",warning,warning,화이트,iris_white
+111,아이리스,iris,"좋은 소식, 용기",warning,warning,화이트 옐로우,iris_white_yellow
+112,아이리스,iris,"좋은 소식, 용기",warning,warning,연보라,iris_white_softpurple
+113,연보라,silene,청춘의 사랑,alert,alert,연핑크,silene_babypink
+114,파스티니 거베라,pasta gerbera mini,"신비, 수수께끼",alert,alert,연핑크,pasta_gerbera_mini_babypink
+115,파스티니 거베라,pasta gerbera mini,"신비, 수수께끼",alert,alert,코랄,pasta_gerbera_mini_coral
+116,파스타 거베라,gerbera pasta,,alert,alert,크림,gerbera_pasta_cream
+117,파스타 거베라,gerbera pasta,,alert,alert,피치,gerbera_pasta_peach
+118,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,빈티지 코랄,carnetion_vintage_coral
+119,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,로제 그라데이션,carnetion_gradient_pink
+120,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,레드,carnetion_red
+121,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,핑크,carnetion_pink
+122,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,카라멜,carnetion_caramel
+123,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,오렌지,carnetion_orange
+124,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,빈티지 핑크,carnetion_vintage_pink
+125,스탠다드 카네이션,carnetion,당신을 존경합니다.,warning,warning,연주황,carnetion_soft_orange
+126,카라,calla,당신만한 여자는 없습니다.,alert,alert,화이트,calla_white
+127,카라,calla,당신만한 여자는 없습니다.,alert,alert,화이트 퍼플,calla_white_purple
+128,카라,calla,당신만한 여자는 없습니다.,alert,alert,노랑,calla_yellow
+129,카라,calla,당신만한 여자는 없습니다.,alert,alert,블랙,calla_black
+130,카라,calla,당신만한 여자는 없습니다.,alert,alert,오렌지,calla_orange
+131,카라,calla,당신만한 여자는 없습니다.,alert,alert,핑크 와인,calla_pink_wine
+132,카라,calla,당신만한 여자는 없습니다.,alert,alert,핑크,calla_pink
+133,카라,calla,당신만한 여자는 없습니다.,alert,alert,연핑크,calla_soft_pink
+134,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,핑크,alstromeria_pink
+135,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,오렌지,alstromeria_orange
+136,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,연노랑,alstromeria_soft_yellow
+137,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,옐로우 그라데이션,alstromeria_gradient_yellow
+138,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,퍼플(갤럭시),alstromeria_purple
+139,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,연핑크,alstromeria_soft_pink
+140,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,연퍼플,alstromeria_soft_purple
+141,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,화이트,alstromeria_white
+142,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,노랑,alstromeria_yellow
+143,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,와인(나폴리),alstromeria_wine
+144,알스트로메리아,alstromeria,"새로운 만남, 배려",alert,alert,레드,alstromeria_red
+145,브루트 장미,rose brut,사랑의 맹세,alert,alert,연분홍,rose_brut_soft_pink
+146,수국,hydrangea,"친절, 현명",alert,alert,화이트,hydrangea_white
+147,수국,hydrangea,"친절, 현명",alert,alert,라벤더,hydrangea_lavender
+148,수국,hydrangea,"친절, 현명",alert,alert,블루프리미엄,hydrangea_blue
+149,수국,hydrangea,"친절, 현명",alert,alert,연핑크,hydrangea_soft_pink
+150,피콜리니 거베라,piccolini gerbera,"신비, 수수께끼",alert,alert,핑크,piccolini_gerbera_pink
+151,피콜리니 거베라,piccolini gerbera,"신비, 수수께끼",alert,alert,오렌지,piccolini_gerbera_orange
+152,피콜리니 거베라,piccolini gerbera,"신비, 수수께끼",alert,alert,핫핑크,piccolini_gerbera_hot_pink
+153,피콜리니 거베라,piccolini gerbera,"신비, 수수께끼",alert,alert,피치,piccolini_gerbera_peach
+154,자나 장미,rose jana,변함없는 사랑의 맹세,alert,alert,미스티 로즈,rose_jana_soft_pink
+155,마트리카리아,fever few,포기하지마세요,alert,alert,화이트,fever_few_white
+156,자이언트 델피늄,giant delphinium,제 마음을 헤아려 주세요,warning,warning,라벤더,giant_delphinium_lavender
+157,자이언트 델피늄,giant delphinium,제 마음을 헤아려 주세요,warning,warning,진파랑,giant_delphinium_deep_blue
+158,자이언트 델피늄,giant delphinium,제 마음을 헤아려 주세요,warning,warning,화이트,giant_delphinium_white
+159,자이언트 델피늄,giant delphinium,제 마음을 헤아려 주세요,warning,warning,연파랑,giant_delphinium_soft_blue
+160,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,당근,mini_gerbera_orage
+161,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,연핑크,mini_gerbera_soft_pink
+162,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,핑크,mini_gerbera_pink
+163,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,노랑,mini_gerbera_yellow
+164,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,피치,mini_gerbera_peach
+165,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,화이트,mini_gerbera_white
+166,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,연노랑,mini_gerbera_soft_yellow
+167,미니 거베라,mini gerbera,"신비, 수수께끼",alert,alert,레드와인,mini_gerbera_wine
+168,오리엔탈 백합,lily,"순결, 위엄",warning,warning,화이트,lily_white
+169,오리엔탈 백합,lily,"순결, 위엄",warning,warning,연핑크,lily_pink
+170,오리엔탈 백합,lily,"순결, 위엄",warning,warning,연노랑,lily_soft_yellow
+171,스프레이 델피늄,spray delphinium,당신을 행복하게 해줄게요,alert,alert,하늘,spray_delphinium_soft_blue
+172,스프레이 델피늄,spray delphinium,당신을 행복하게 해줄게요,alert,alert,블루,spray_delphinium_blue
+173,스프레이 델피늄,spray delphinium,당신을 행복하게 해줄게요,alert,alert,화이트,spray_delphinium_white
+174,스프레이 델피늄,spray delphinium,당신을 행복하게 해줄게요,alert,alert,연핑크,spray_delphinium_soft_pink
+175,차밍레이스 장미,rose charming lace,,alert,alert,핑크,rose_charming_lace_pink
+176,겹 수선화,layer,"자기애, 자존심, 고결",warning,warning,연주황,layer_narcissus_soft_orange
+177,겹 수선화,layer,"자기애, 자존심, 고결",warning,warning,주황,layer_narcissus_orange
+178,겹 수선화,layer,"자기애, 자존심, 고결",warning,warning,노랑,layer_narcissus_yellow
+179,스카비오사 씨드,scabiosa seed,"운치, 사랑을 잃다",alert,alert,브라운,scabiosa_seed_brown
+180,몬디알 장미,rose_mondial,,alert,alert,크림,rose_mondial_white
+181,몬디알 장미,rose_mondial,,alert,alert,연핑크,rose_mondial_soft_pink
+182,온시디움 환타지아,oncydium fantasia,마음을 흔드는 사랑,alert,alert,오렌지,oncydium_fatasia_orange
+183,온시디움 환타지아,oncydium fantasia,마음을 흔드는 사랑,alert,alert,옐로우,oncydium_fatasia_yellow
+184,핑크아미 장미,rose pink ami,,alert,alert,피치,rose_pink_ami_peach
+185,스타티스,sea lavender,영구불변,alert,alert,피치,sea_lavender_peach
+186,스타티스,sea lavender,영구불변,alert,alert,연보라,sea_lavender_soft_purple
+187,스타티스,sea lavender,영구불변,alert,alert,화이트,sea_lavender_soft_purple
+188,스타티스,sea lavender,영구불변,alert,alert,진핑크,sea_lavender_hot_pink
+189,스타티스,sea lavender,영구불변,alert,alert,믹스,sea_lavender_mix
+190,점박이 엽란,aspidistra milkway,,alert,alert,도트,aspidistra_milkway
+191,웨딩요요 장미,rose wedding yoyo,,alert,alert,크림옐로우,rose_wedding_yoyo
+192,헤라장미,rose hera,행복한 사랑,alert,alert,라이트 핑크,rose_hera_soft_pink
+193,프린스 튤립,tulip prince,영원한 애정,warning,warning,진보라,tulip_prince_purple
+194,프린스 튤립,tulip prince,영원한 애정,warning,warning,연보라,tulip_prince_soft_purple
+195,프린스 튤립,tulip prince,영원한 애정,warning,warning,화이트,tulip_prince_white
+196,프린스 튤립,tulip prince,영원한 애정,warning,warning,노랑,tulip_prince_yellow

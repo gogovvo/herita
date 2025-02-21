@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}로그인{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto">
+    <div class="bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-2xl font-bold mb-8 text-center">로그인</h1>
+        
+        <div class="space-y-4">
+            <button onclick="kakaoLogin()"
+                    class="w-full bg-yellow-300 text-black font-medium py-3 px-4 rounded-lg
+                           hover:bg-yellow-400 flex items-center justify-center">
+                <img src="/static/kakao-logo.png" alt="Kakao" class="w-6 h-6 mr-2">
+                카카오톡으로 로그인
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>
+Kakao.init('60cd0b218ea14ec56c7f5f6da30de43c');
+
+function kakaoLogin() {
+    Kakao.Auth.login({
+        success: function(authObj) {
+            console.log('로그인 성공:', authObj);
+
+            Kakao.API.request({
+                url: '/v2/user/me',
+                success: async function(response) {
+                    console.log('사용자 정보:', response);
+
+                    try {
+                        const res = await fetch('/kakao-login', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-Requested-With': 'XMLHttpRequest'
+                            },
+                            body: JSON.stringify({
+                                kakao_id: response.id,
+                                nickname: response.properties?.nickname,
+                                email: response.kakao_account?.email
+                            })
+                        });
+
+                        const data = await res.json();
+                        if (data.success) {
+                            console.log('서버 로그인 성공');
+                            window.location.href = '/mypage';
+                        } else {
+                            console.error('서버 로그인 실패');
+                            alert('로그인에 실패했습니다.');
+                        }
+                    } catch (err) {
+                        console.error('서버 통신 에러:', err);
+                        alert('로그인 처리 중 오류가 발생했습니다.');
+                    }
+                },
+                fail: function(error) {
+                    console.error('사용자 정보 요청 실패:', error);
+                    alert('카카오 사용자 정보를 가져오는데 실패했습니다.');
+                }
+            });
+        },
+        fail: function(error) {
+            console.error('카카오 로그인 실패:', error);
+            alert('카카오 로그인에 실패했습니다.');
+        }
+    });
+}
+</script>
+{% endblock %}

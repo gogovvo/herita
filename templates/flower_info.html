@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꽃 정보 입력</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>꽃 정보 입력</h1>
+        <form method="POST">
+            <div class="flower-list">
+                {% for flower in flowers %}
+                <label>
+                    <input type="checkbox" name="flowers" value="{{ flower.id }}">
+                    {{ flower.name }} ({{ flower.color }}, {{ flower.shape }}, {{ flower.season }})
+                </label><br>
+                {% endfor %}
+            </div>
+            <button type="submit">선택 완료</button>
+        </form>
+    </div>
+</body>
+</html>

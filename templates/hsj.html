@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤리타;꽃 정보 서비스</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: white;
+        }
+
+        .header-bg {
+            background-color: #C6388F;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .title-bg {
+            background-color: #454545;
+            color: white;
+            padding: 16px;
+        }
+
+        .service-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .login-text {
+            font-size: 12px;
+        }
+
+        .page-title {
+            font-size: 20px;
+        }
+
+        .main-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .flower-list {
+            padding: 16px;
+        }
+
+        .flower-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .flower-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .flower-thumbnail {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .flower-info {
+            margin-left: 12px;
+        }
+
+        .flower-name {
+            font-weight: 500;
+            color: #111827;
+        }
+
+        .flower-description {
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        .footer {
+            background-color: #454545;
+            color: white;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #374151;
+        }
+
+        .footer-text {
+            font-size: 14px;
+        }
+
+        .share-icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header-bg">
+            <h1 class="service-title">헤리타;꽃 정보 서비스</h1>
+            <span class="login-text">로그인</span>
+        </header>
+
+        <!-- Title Section -->
+        <div class="title-bg">
+            <h2 class="page-title">이런 꽃이 들어있어요!</h2>
+        </div>
+
+        <!-- Main Image -->
+        <img src="/static/flowers/hsj.png" alt="Wedding Bouquet" class="main-image">
+
+        <!-- Flower List -->
+        <div class="flower-list">
+            <!-- Hanoi Rose -->
+            <div class="flower-item">
+                <img src="/static/flowers/carnation.png" alt="카네이션" class="flower-thumbnail">
+                <div class="flower-info">
+                    <h3 class="flower-name">로제 그라데이션 카네이션</h3>
+                    <p class="flower-description">rose gradient carnation / 당신을 존경합니다</p>
+                </div>
+            </div>
+
+            <!-- White Calla -->
+            <div class="flower-item">
+                <img src="/static/flowers/SNAPDRAGON.png" alt="금어초" class="flower-thumbnail">
+                <div class="flower-info">
+                    <h3 class="flower-name">금어초</h3>
+                    <p class="flower-description">SNAPDRAGON / 수다쟁이, 욕망</p>
+                </div>
+            </div>
+
+            <!-- Snow Flower -->
+            <div class="flower-item">
+                <img src="/static/flowers/flower.png" alt="국화" class="flower-thumbnail">
+                <div class="flower-info">
+                    <h3 class="flower-name">와인 국화</h3>
+                    <p class="flower-description">CHRYSANTHEMUM / 청초</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <span class="footer-text">저장하고 다음에도 꺼내보기</span>
+            <svg class="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

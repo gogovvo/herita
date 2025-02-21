@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}헤리타;꽃 정보 서비스{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/herita_logo_favicon_h.png') }}" type="image/png">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: white;
+            min-height: 100vh; /* 전체 뷰포트 높이 최소값 설정 */
+            display: flex;
+            flex-direction: column; /* 세로 방향 레이아웃 */
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 100%;
+            flex: 1; /* 남은 공간 모두 차지 */
+            padding-bottom: 64px; /* footer 높이만큼 여백 추가 */
+        }
+
+/* 헤더 컨테이너 추가 */
+.header-container {
+    width: 100%;
+        display: flex;
+    justify-content: center; /* 가운데 정렬 추가 */
+}
+
+.header-bg {
+    background-color: #C6388F;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+        .title-bg {
+            background-color: #454545;
+            color: white;
+            padding: 16px;
+        }
+
+        .service-title {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.5px; /* 자간 조정 */
+        }
+
+        .service-title a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.2s ease; /* 호버 효과 부드럽게 */
+        }
+
+        .service-title a:hover {
+            opacity: 0.8;
+        }
+
+.login-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+        .login-text:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+        .page-title {
+            font-size: 20px;
+        }
+
+        .main-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        .flower-list {
+            padding: 16px;
+        }
+
+        .flower-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .flower-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .flower-thumbnail {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .flower-info {
+            margin-left: 12px;
+        }
+
+        .flower-name {
+            font-weight: 500;
+            color: #111827;
+        }
+
+        .flower-description {
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        .footer {
+            background-color: #454545;
+            color: white;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #374151;
+            position: fixed; /* 화면 하단에 고정 */
+            bottom: 0; /* 하단에 배치 */
+            width: 100%; /* 전체 너비 사용 */
+            left: 0; /* 왼쪽 정렬 */
+            height: 64px; /* footer 높이 지정 */
+        }
+
+
+
+
+        .footer-text {
+            font-size: 14px;
+        }
+
+        .share-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+
+
+        /* PC 환경 (768px 이상일 때) */
+@media (min-width: 768px) {
+        .header-bg {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+            .container {
+                max-width: 768px;
+                margin: 0 auto;
+            }
+
+    .login-text {
+        font-size: 15px; /* PC에서 폰트 크기 증가 */
+    }
+                .footer {
+                max-width: 768px;
+                left: 50%;
+                transform: translateX(-50%); /* 가운데 정렬 */
+                    cursor: pointer;
+            }
+}
+
+    </style>
+</head>
+<body>
+<!-- Header -->
+<div class="header-container">
+    <header class="header-bg">
+        <h1 class="service-title"><a href="{{ url_for('index') }}">헤리타 | 꽃 정보 서비스</a></h1>
+        <div class="flex items-center space-x-3">
+            {% if not request.endpoint == 'mypage' and session.get('kakao_id') %}
+                <a href="{{ url_for('mypage') }}" class="login-text">마이페이지</a>
+            {% endif %}
+
+            {% if not session.get('kakao_id') and not request.endpoint == 'login' %}
+                <a href="{{ url_for('login') }}" class="login-text">로그인</a>
+            {% endif %}
+
+            {% if session.get('kakao_id') %}
+                <a href="{{ url_for('logout') }}" class="login-text">로그아웃</a>
+            {% endif %}
+        </div>
+    </header>
+</div>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

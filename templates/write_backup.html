@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block title %}꽃 정보 입력{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-2xl font-bold mb-8">어떤 꽃을 만들까요?</h1>
+    
+    <!-- 꽃 사진 업로드 섹션 -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+            <input type="file" name="file" id="file" class="hidden" accept="image/*" onchange="handleFileSelect(event)">
+            <label for="file" id="file-label" class="cursor-pointer">
+                <div class="flex flex-col items-center">
+                    <span class="text-3xl mb-2">+</span>
+                    <span>사진 올리기</span>
+                </div>
+            </label>
+            <div id="preview" class="mt-4 hidden">
+                <img id="image-preview" class="w-full h-auto object-cover rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <!-- 꽃 검색 및 선택 섹션 -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="mb-4">
+            <input type="text" id="flower-search" placeholder="꽃 이름을 검색해보세요..."
+                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div id="flower-list" class="space-y-2 mb-6">
+            <!-- 꽃 리스트가 여기에 동적으로 추가됩니다 -->
+        </div>
+
+        <div id="selected-flowers" class="space-y-2 mb-6 hidden">
+            <h3 class="font-bold text-lg mb-2">선택된 꽃</h3>
+            <div id="selected-flowers-list" class="space-y-2">
+                <!-- 선택된 꽃들이 여기에 표시됩니다 -->
+            </div>
+        </div>
+
+        <!-- 완성 버튼 -->
+        <div class="text-center">
+            <button id="complete-btn"
+                    class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 disabled:bg-gray-300"
+                    disabled>
+                완성하기
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+let selectedFlowers = new Set();
+// 파일 선택 처리 - 이미지 미리보기 수행
+function handleFileSelect(event) {
+    const input = event.target;
+    const preview = document.getElementById('preview');
+    const imagePreview = document.getElementById('image-preview');
+    const fileLabel = document.getElementById('file-label');
+
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            imagePreview.src = e.target.result;
+            preview.classList.remove('hidden');
+            fileLabel.classList.add('hidden'); // 사진 올리기 버튼 숨기기
+            updateCompleteButton();
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+// 완성 버튼 클릭 처리
+document.getElementById('complete-btn').addEventListener('click', async function() {
+    const formData = new FormData();
+
+    const imageFile = document.querySelector('#file').files[0];
+    formData.append('file', imageFile);
+    formData.append('flowers', JSON.stringify(Array.from(selectedFlowers)));
+
+    try {
+        const response = await fetch('/save-flower-info', {
+            method: 'POST',
+            body: formData
+        });
+        console.log('point2');
+
+        if (response.ok) {
+            alert('완성!');  // 성공시 알림
+            const result = await response.json();
+            console.log('서버 응답:', result);  // 서버 응답 로그 출력
+        } else {
+            throw new Error('저장에 실패했습니다.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('저장 중 오류가 발생했습니다.');
+    }
+});
+// 꽃 선택 처리
+function selectFlower(flower) {
+    console.log('selectFlower called:', flower);
+    const flowerKey = flower.name_kr;
+    if (selectedFlowers.has(flowerKey)) {
+        selectedFlowers.delete(flowerKey);
+    } else {
+        selectedFlowers.add(flowerKey);
+    }
+    console.log('selectedFlowers:', selectedFlowers);
+    updateSelectedFlowersList();
+    updateCompleteButton();
+}
+
+// 선택된 꽃 목록 업데이트
+function updateSelectedFlowersList() {
+    const selectedFlowersDiv = document.getElementById('selected-flowers');
+    const selectedFlowersList = document.getElementById('selected-flowers-list');
+
+    if (selectedFlowers.size > 0) {
+        selectedFlowersDiv.classList.remove('hidden');
+        selectedFlowersList.innerHTML = Array.from(selectedFlowers).map(flowerName => `
+            <div class="flex items-center p-3 bg-gray-200 rounded cursor-pointer">
+                <div class="flex items-center w-full">
+                    <img src="/static/flower-icons/${flowerName}.png"
+                         class="w-12 h-12 rounded-full object-cover mr-4"
+                         onerror="this.src='/static/default-flower.png'">
+                    <div class="flex-grow">
+                        <div class="font-medium">${flowerName}</div>
+                    </div>
+                    <button onclick='selectFlower({"name_kr": "${flowerName}"})'
+                            class="text-gray-500 hover:text-gray-700 text-xl">
+                        ×
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    } else {
+        selectedFlowersDiv.classList.add('hidden');
+    }
+}
+// 완성 버튼 상태 업데이트
+function updateCompleteButton() {
+    const completeBtn = document.getElementById('complete-btn');
+    const hasImage = !document.getElementById('preview').classList.contains('hidden');
+    const hasSelectedFlowers = selectedFlowers.size > 0;
+
+    completeBtn.disabled = !(hasImage && hasSelectedFlowers);
+}
+
+// 검색 기능
+const searchInput = document.getElementById('flower-search');
+const flowerList = document.getElementById('flower-list');
+let currentRequest = null;
+
+searchInput.addEventListener('input', debounce(async function(e) {
+    const query = e.target.value.trim();
+    if (query.length < 1) {
+        flowerList.innerHTML = '';
+        return;
+    }
+
+    try {
+        if (currentRequest) {
+            currentRequest.abort();
+        }
+        currentRequest = new AbortController();
+
+        const response = await fetch(
+            `/search_flowers?query=${encodeURIComponent(query)}`,
+            { signal: currentRequest.signal }
+        );
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const flowers = await response.json();
+
+        if (query === searchInput.value.trim()) {
+            flowerList.innerHTML = flowers.map(flower => `
+    <div class="flex items-center p-3 rounded cursor-pointer transition-colors duration-200
+                ${selectedFlowers.has(flower.name_kr) ? 'bg-gray-200' : 'hover:bg-gray-50'}"
+         onclick='selectFlower({"name_kr": "${flower.name_kr}", "name_en": "${flower.name_en}", "meaning": "${flower.meaning}"})'>
+        <div class="flex items-center w-full">
+            <img src="/static/flower-icons/${flower.name_en}.png"
+                 class="w-12 h-12 rounded-full object-cover mr-4"
+                 onerror="this.src='/static/default-flower.png'">
+            <div>
+                <div class="font-medium">${flower.name_kr}</div>
+                <div class="text-sm text-gray-600">${flower.meaning}</div>
+            </div>
+        </div>
+    </div>
+`).join('');
+        }
+    } catch (error) {
+        if (error.name === 'AbortError') return;
+        console.error('Error fetching flowers:', error);
+        flowerList.innerHTML = '<div class="text-red-500">검색 중 오류가 발생했습니다.</div>';
+    } finally {
+        currentRequest = null;
+    }
+}, 300));
+
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+</script>
+{% endblock %}

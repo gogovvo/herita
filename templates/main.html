@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꽃다발 정보 공유 서비스</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <h1>꽃다발 정보 공유 서비스</h1>
+            <p>당신의 꽃다발을 공유해보세요</p>
+            <a href="{{ url_for('upload') }}" class="button">시작하기</a>
+        </div>
+    </div>
+</body>
+</html>

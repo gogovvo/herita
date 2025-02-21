@@ -1,0 +1,52 @@
+{% extends "header.html" %}
+
+{% block title %}꽃 정보 입력{% endblock %}
+
+{% block content %}
+
+        <!-- Title Section -->
+        <div class="title-bg">
+            <h2 class="page-title">이런 꽃이 들어있어요!</h2>
+        </div>
+
+        <!-- Main Image Upload Section -->
+<div class="image-upload-container">
+    <label for="bouquet-upload" class="image-upload-label">
+        <div class="upload-placeholder">
+            <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v13m0-13l-4 4m4-4l4 4m-12 8h16"/>
+            </svg>
+            <span class="upload-text">꽃다발 이미지를 업로드해주세요</span>
+            <span class="upload-subtext">클릭하거나 드래그하여 업로드</span>
+        </div>
+        <img id="preview-image" class="main-image hidden" alt="Preview Image">
+    </label>
+    <input type="file" id="bouquet-upload" class="hidden" accept="image/*">
+</div>
+<!-- Search Box -->
+<div class="search-container">
+    <div class="search-box">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="search-input" placeholder="꽃 이름을 검색해보세요" class="search-input">
+    </div>
+</div>
+<!--         Flower List-->
+        <div class="flower-list"  id="search-results">
+<!--            &lt;!&ndash; Hanoi Rose &ndash;&gt;-->
+<!--            <div class="flower-item">-->
+<!--                <img src="/static/flowers/carnation.png" alt="카네이션" class="flower-thumbnail">-->
+<!--                <div class="flower-info">-->
+<!--                    <h3 class="flower-name">로제 그라데이션 카네이션</h3>-->
+<!--                    <p class="flower-description">rose gradient carnation / 당신을 존경합니다</p>-->
+<!--                </div>-->
+<!--            </div>-->
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" id="done-write">
+            <span class="footer-text">작성 완료</span>
+        </div>
+{% endblock %}

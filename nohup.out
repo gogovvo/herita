@@ -1,0 +1,510 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.7.212:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 573-329-207
+211.234.201.118 - - [15/Feb/2025 17:56:01] "GET /GEJ HTTP/1.1" 200 -
+211.234.201.118 - - [15/Feb/2025 17:56:01] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.1" 304 -
+211.234.201.118 - - [15/Feb/2025 17:56:01] "GET /static/flowers/carnation.png HTTP/1.1" 304 -
+211.234.201.118 - - [15/Feb/2025 17:56:01] "GET /static/flowers/SNAPDRAGON.png HTTP/1.1" 304 -
+211.234.201.118 - - [15/Feb/2025 17:56:01] "GET /static/flowers/gej.png HTTP/1.1" 304 -
+211.234.201.118 - - [15/Feb/2025 17:56:03] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:56:03] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:56:03] "GET /favicon.ico HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:56:03] "GET /GEJ HTTP/1.1" 200 -
+211.234.201.118 - - [15/Feb/2025 17:56:04] "GET /static/flowers/gej.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:07] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:07] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:07] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:07] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:07] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 200 -
+211.234.201.118 - - [15/Feb/2025 17:56:08] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:56:08] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:56:08] "GET /favicon.ico HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:56:09] "GET /GEJ HTTP/1.1" 200 -
+211.234.201.118 - - [15/Feb/2025 17:56:09] "GET /static/flowers/gej.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:10] "GET /apple-touch-icon.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 17:56:10] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 17:56:10] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 17:56:10] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:56:11] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+211.234.201.118 - - [15/Feb/2025 17:58:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [15/Feb/2025 17:58:15] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 17:58:15] "GET /apple-touch-icon.png HTTP/1.0" 404 -
+211.234.201.118 - - [15/Feb/2025 17:58:15] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+211.234.201.118 - - [15/Feb/2025 17:58:15] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+127.0.0.1 - - [15/Feb/2025 17:58:15] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 17:58:15] "GET /GEJ HTTP/1.0" 200 -
+211.234.201.118 - - [15/Feb/2025 17:58:15] "GET /GEJ HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2025 17:58:17] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+211.234.201.118 - - [15/Feb/2025 17:58:17] "GET /static/flowers/gej.png HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:02] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:02] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:02] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:03] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:03] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:04] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 17:59:19] "GET /GYE HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/herita/app.py", line 207, in GYE
+    return render_template('GYE.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: GYE.html
+127.0.0.1 - - [15/Feb/2025 17:59:19] "GET /GYE?__debugger__=yes&cmd=resource&f=style.css HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:19] "GET /GYE?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 17:59:19] "GET /GYE?__debugger__=yes&cmd=resource&f=console.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:10:31] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:10:31] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:10:31] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:10:31] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:10:31] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:10:31] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:12:08] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:12:08] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:12:08] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:12:08] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:12:08] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:12:08] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:12:32] "GET /GYJ HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:12:32] "GET /GYJ HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:12:36] "GET /GYJ HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:12:36] "GET /GYJ HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:12:40] "GET /GYE HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/herita/app.py", line 207, in GYE
+    return render_template('GYE.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: GYE.html
+127.0.0.1 - - [15/Feb/2025 18:12:40] "GET /GYE?__debugger__=yes&cmd=resource&f=style.css HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:12:40] "GET /GYE?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:12:40] "GET /GYE HTTP/1.0" 500 -
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/herita/app.py", line 207, in GYE
+    return render_template('GYE.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: GYE.html
+127.0.0.1 - - [15/Feb/2025 18:12:40] "GET /GYE?__debugger__=yes&cmd=resource&f=console.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:14:53] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:14:53] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:14:53] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:14:53] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:14:53] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 18:14:53] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:04] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:04] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:04] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:04] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:04] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:15:05] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:15:14] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:15] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:15] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:15] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:16] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:15:16] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:15:23] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:23] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:24] "GET /static/flowers/hsj.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:24] "GET /static/flowers/hsj.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 18:15:24] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 18:15:24] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 19:01:35] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:35] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:35] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:35] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:35] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:38] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:38] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:38] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:38] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:38] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:38] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:39] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:39] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:39] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:39] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:42] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:42] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:42] "GET /static/flowers/hsj.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:42] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:42] "GET /static/flowers/flower.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:50] "GET /apple-touch-icon.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 19:01:50] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 19:01:50] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:50] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 19:01:50] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:53] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:53] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:53] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:56] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:01:56] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:56] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:56] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:01:56] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:02:23] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 19:02:23] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:02:23] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:02:23] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 19:02:23] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+51.81.144.43 - - [15/Feb/2025 19:21:13] "GET / HTTP/1.1" 200 -
+51.81.181.170 - - [15/Feb/2025 19:28:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [15/Feb/2025 20:07:51] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 20:07:51] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 20:07:51] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 20:07:51] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 20:07:51] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 21:40:10] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:29:23] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:29:23] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:23] "GET /static/flowers/hsj.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:23] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:23] "GET /static/flowers/flower.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:28] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:29:28] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:28] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:28] "GET /static/flowers/gye.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:29:28] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:46:36] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:46:36] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:46:36] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:46:36] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:46:36] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /apple-touch-icon.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /apple-touch-icon.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:47:14] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:47:39] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:39] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:39] "GET /apple-touch-icon.png HTTP/1.0" 404 -
+127.0.0.1 - - [15/Feb/2025 22:47:39] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 22:47:39] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+64.62.156.14 - - [15/Feb/2025 23:07:27] "GET / HTTP/1.1" 200 -
+64.62.156.10 - - [15/Feb/2025 23:07:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [15/Feb/2025 23:10:12] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [15/Feb/2025 23:10:12] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 23:10:12] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 23:10:12] "GET /static/flowers/hsj.png HTTP/1.0" 304 -
+127.0.0.1 - - [15/Feb/2025 23:10:12] "GET /static/flowers/flower.png HTTP/1.0" 304 -
+127.0.0.1 - - [16/Feb/2025 13:41:41] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [16/Feb/2025 13:41:41] "GET /GYE?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.0" 304 -
+127.0.0.1 - - [16/Feb/2025 13:41:41] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [16/Feb/2025 13:41:41] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [16/Feb/2025 13:41:41] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [16/Feb/2025 13:41:41] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+127.0.0.1 - - [16/Feb/2025 14:36:59] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [16/Feb/2025 14:36:59] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 304 -
+127.0.0.1 - - [16/Feb/2025 14:36:59] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [16/Feb/2025 14:36:59] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [16/Feb/2025 14:36:59] "GET /static/flowers/gye.png HTTP/1.0" 304 -
+198.235.24.158 - - [16/Feb/2025 16:20:32] "GET / HTTP/1.0" 200 -
+68.183.181.120 - - [16/Feb/2025 23:23:46] code 400, message Bad request version ('À\x14À')
+68.183.181.120 - - [16/Feb/2025 23:23:46] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x0cO\x19\x87«z°Î\x8fw\x9e³þJã\x7f+VæÁ_ý\x15Ç÷\x15\x86\x9a¨\x0f\x13\x1c\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+68.183.181.120 - - [16/Feb/2025 23:23:47] code 400, message Bad request version ('À\x14À')
+68.183.181.120 - - [16/Feb/2025 23:23:47] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x037,Æ!\x8b}7=«lr½¹»ÐõÈÅTb9Dî  ï±äªNeù\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+68.183.181.120 - - [16/Feb/2025 23:23:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/gye.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/gye.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 00:10:43] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+80.82.70.133 - - [17/Feb/2025 06:28:31] code 400, message Bad request version ("¯nãY»bhlÿ(=':©\x82ÙoÈ¢×\x93\x98´ï\x80å¹\x90\x00(À")
+80.82.70.133 - - [17/Feb/2025 06:28:31] "\x16\x03\x02\x01o\x01\x00\x01k\x03\x02RHÅ\x1a#÷:Nßâ´\x82/ÿ\x09T\x9f§Äy°hÆ\x13\x8c¤\x1c="á\x1a\x98 \x84´,\x85¯nãY»bhlÿ(=':©\x82ÙoÈ¢×\x93\x98´ï\x80å¹\x90\x00(À" 400 -
+205.210.31.133 - - [17/Feb/2025 08:24:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Feb/2025 09:00:03] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 09:00:03] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 09:02:49] "GET /GEJ HTTP/1.0" 200 -
+147.185.132.177 - - [17/Feb/2025 13:00:54] "GET / HTTP/1.1" 200 -
+93.197.221.157 - - [17/Feb/2025 14:03:28] "GET / HTTP/1.0" 200 -
+58.151.46.178 - - [17/Feb/2025 14:04:36] "GET / HTTP/1.1" 200 -
+58.151.46.178 - - [17/Feb/2025 14:04:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:43] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:43] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:43] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:43] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:43] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:43] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:04:46] "GET /WebSummary.vue.map HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 14:04:46] "GET /WebExplain.vue.map HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 14:54:11] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:54:11] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:54:11] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:54:11] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:54:11] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:54:11] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:54:13] "GET /WebSummary.vue.map HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 14:54:13] "GET /WebExplain.vue.map HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 14:55:58] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:55:59] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:01] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:01] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:03] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:03] "GET /static/flowers/gej.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:03] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:03] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:03] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 14:56:04] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 14:56:04] "GET /favicon.ico HTTP/1.0" 404 -
+127.0.0.1 - - [17/Feb/2025 14:56:04] "GET /favicon.ico HTTP/1.0" 404 -
+64.62.197.39 - - [17/Feb/2025 15:48:11] "GET / HTTP/1.1" 200 -
+64.62.197.40 - - [17/Feb/2025 15:48:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Feb/2025 16:09:49] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:09:49] "GET /static/flowers/gej.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:09:49] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:09:49] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:09:49] "GET /static/flowers/CHRYSANTHEMUM.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:09:50] "GET /GEJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:25] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:25] "GET /static/flowers/hsj.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:25] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:10:25] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:10:25] "GET /static/flowers/flower.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:26] "GET /HSJ HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:33] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:33] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:10:33] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:33] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:10:33] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:10:33] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:14:32] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [17/Feb/2025 16:14:32] "GET /static/flowers/gye.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:14:32] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:14:32] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:14:32] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 304 -
+127.0.0.1 - - [17/Feb/2025 16:14:32] "GET /GYE HTTP/1.0" 200 -
+5.101.0.66 - - [17/Feb/2025 17:02:11] "GET / HTTP/1.0" 200 -
+41.215.35.222 - - [17/Feb/2025 17:02:25] "GET / HTTP/1.1" 200 -
+43.255.165.22 - - [17/Feb/2025 17:02:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Feb/2025 17:48:46] "GET /GEJ HTTP/1.0" 200 -
+220.134.132.83 - - [17/Feb/2025 18:01:21] "GET / HTTP/1.0" 200 -
+220.134.152.47 - - [17/Feb/2025 20:53:58] "GET / HTTP/1.0" 200 -
+104.40.75.103 - - [17/Feb/2025 22:24:54] "GET /v2/ HTTP/1.1" 404 -
+206.168.34.52 - - [18/Feb/2025 04:06:44] code 400, message Bad request version ('À\x14À')
+206.168.34.52 - - [18/Feb/2025 04:06:44] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Üú\x92|ïº\x0f"N\x92jYºÆÖq\x83?Ú¼»\x0e¹9,30\x85\x00úØk \x83\x8e\x08\x04\x9b]ú\x93{¡[m?\x08Z×©QD²6É\x19yã±\x83é\x96JTO\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+206.168.34.52 - - [18/Feb/2025 04:07:36] code 400, message Bad request syntax ('ZG\x00\x00\x00\x05\x00+\x0e\x01\x00')
+206.168.34.52 - - [18/Feb/2025 04:07:36] "ZG\x00\x00\x00\x05\x00+\x0e\x01\x00" 400 -
+109.236.61.99 - - [18/Feb/2025 08:04:20] code 400, message Bad request version ('}')
+109.236.61.99 - - [18/Feb/2025 08:04:20] "ÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00ñ\x03%\x00\x00\x00{ "Ret" : 100, "SessionID" : "0x0" }" 400 -
+170.203.143.191 - - [18/Feb/2025 08:04:38] "GET / HTTP/1.0" 200 -
+61.61.11.220 - - [18/Feb/2025 12:51:47] "GET / HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 13:40:06] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 13:40:06] "GET /static/flowers/gye.png HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 13:40:06] "GET /static/flowers/carnation.png HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 13:40:07] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 13:40:07] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 15:57:16] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [18/Feb/2025 15:57:16] "GET /static/flowers/CAMPANULA.png HTTP/1.0" 304 -
+127.0.0.1 - - [18/Feb/2025 15:57:16] "GET /static/flowers/SNAPDRAGON.png HTTP/1.0" 304 -
+127.0.0.1 - - [18/Feb/2025 15:57:16] "GET /static/flowers/carnation.png HTTP/1.0" 304 -
+127.0.0.1 - - [18/Feb/2025 15:57:16] "GET /static/flowers/gye.png HTTP/1.0" 304 -
+5.101.0.66 - - [18/Feb/2025 22:47:37] "GET / HTTP/1.0" 200 -
+198.235.24.158 - - [19/Feb/2025 03:10:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Feb/2025 06:14:53] "GET /robots.txt HTTP/1.0" 404 -
+127.0.0.1 - - [19/Feb/2025 06:14:54] "GET / HTTP/1.0" 200 -
+120.0.52.166 - - [19/Feb/2025 07:49:57] "GET / HTTP/1.1" 200 -
+59.172.119.227 - - [19/Feb/2025 07:49:57] code 400, message Bad request version ('À\x13À')
+59.172.119.227 - - [19/Feb/2025 07:49:57] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x8f9K?\x129\x7fZ\x88\x0c?Ì\x03n\x06ODó®dÍÜ³¾\x1a\x05¢\x03êþ¯p \x0e¤âè\x9bjI\x18­S\x8cÛ\x86­UeuRH²x¦\x1bL\x8e+jÐþ¯µ\x17\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+175.30.48.17 - - [19/Feb/2025 07:49:59] code 400, message Bad request version ('À\x13À')
+175.30.48.17 - - [19/Feb/2025 07:49:59] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ä\x9cç¿\x0bO¦ò»<u¹ë¯]\x92\x18 rÝ\x11Þ\x07¦hÂµ\x17=\x11\x7f: `5Îéë/\x85?l\x9c_/çG\x19l&kî<9¢oTL¬_ØI \x93ê\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+113.206.199.74 - - [19/Feb/2025 07:50:07] code 400, message Bad request syntax ('{\x01\x00\x1613911111112À¨\x01\x01\x13\x90{')
+113.206.199.74 - - [19/Feb/2025 07:50:07] "{\x01\x00\x1613911111112À¨\x01\x01\x13\x90{" 400 -
+49.113.94.219 - - [19/Feb/2025 07:50:08] "GET / HTTP/1.0" 200 -
+60.16.210.139 - - [19/Feb/2025 07:50:16] code 400, message Bad request syntax ('~\x00\x02\x00\x00\x02\x00\x00\x00\x00\x15\x00\x032~')
+60.16.210.139 - - [19/Feb/2025 07:50:16] "~\x00\x02\x00\x00\x02\x00\x00\x00\x00\x15\x00\x032~" 400 -
+220.197.51.73 - - [19/Feb/2025 07:51:30] "GET / HTTP/1.1" 200 -
+59.52.101.108 - - [19/Feb/2025 07:51:30] "GET /favicon.ico HTTP/1.1" 404 -
+109.236.61.99 - - [19/Feb/2025 09:29:32] code 400, message Bad request version ('}')
+109.236.61.99 - - [19/Feb/2025 09:29:32] "ÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00ñ\x03%\x00\x00\x00{ "Ret" : 100, "SessionID" : "0x0" }" 400 -
+185.42.12.46 - - [19/Feb/2025 09:51:14] code 400, message Bad request version ('À\x13À')
+185.42.12.46 - - [19/Feb/2025 09:51:14] "\x16\x03\x01\x00á\x01\x00\x00Ý\x03\x03\x99V \x0e\x06#ð·EûÇôv\x808\x8ey·¸\x9aUí\x89À+æ;qÖ\x87$\x9f ûhj'\x9c\x01\x8c\x1f3ª>¯N=nÔ\x95\x81á\x09}*n¬:¶\x03\x9eû \x05ú\x00$\x13\x03\x13\x01\x13\x02À/À+À0À,Ì©Ì¨À\x09À\x13À" 400 -
+185.42.12.46 - - [19/Feb/2025 09:51:15] code 400, message Bad request version ('À\x13À')
+185.42.12.46 - - [19/Feb/2025 09:51:15] "\x16\x03\x01\x00á\x01\x00\x00Ý\x03\x03ëÿOl=²Òb\x8fkýQDñô¦\x9f5fe°\x1bá\x926J¿ò\x9f\x1e¤-  HÇzsÑü\x13RU\x15\x84hÈÑáqÃB\x0e$L\x12\x94"ï(\x90k³añ\x00$\x13\x03\x13\x01\x13\x02À/À+À0À,Ì©Ì¨À\x09À\x13À" 400 -
+134.209.21.36 - - [19/Feb/2025 11:13:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ú`§\x087ýÓzà¬ù\x01áÐ\x89¿@@Ròµ³\x13nÉrÎüT\x95\x8e~\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+134.209.21.36 - - [19/Feb/2025 11:13:08] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ú`§\x087ýÓzà¬ù\x01áÐ\x89¿@@Ròµ³\x13nÉrÎüT\x95\x8e~\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+134.209.21.36 - - [19/Feb/2025 11:13:09] code 400, message Bad request version ('À\x14À')
+134.209.21.36 - - [19/Feb/2025 11:13:09] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03G¼UWn³z\x19®l\x90&ÎÞ6@°)ÅV 1i\x1d\x18{½ç\x87\x0c\x0by\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+134.209.21.36 - - [19/Feb/2025 11:13:09] "GET / HTTP/1.1" 200 -
+122.117.239.244 - - [19/Feb/2025 18:49:25] "GET / HTTP/1.0" 200 -
+80.82.70.133 - - [19/Feb/2025 20:31:51] "GET / HTTP/1.0" 200 -
+80.82.77.202 - - [19/Feb/2025 20:32:36] code 400, message Bad request version ('À\x13À')
+80.82.77.202 - - [19/Feb/2025 20:32:36] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x16|V¼\x10KB¿¥%\x87©4=\x09¼´þ<-ÒS<;\x0cÛ;ú\x98±Y( õè\x84\x0b\x0eX¨8zFm\x04\x0b\\l\x1b \x9f\x98'px±;¡à¡§ºà(\x91\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+80.82.77.202 - - [19/Feb/2025 20:32:37] "GET /aaa9 HTTP/1.1" 404 -
+80.82.77.202 - - [19/Feb/2025 20:32:37] code 400, message Bad request version ('À\x13À')
+80.82.77.202 - - [19/Feb/2025 20:32:37] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03g´\x94\x98ë\x16>@}î\x92 ÞÃ@Sf[ûg\x02.Ì\x05)_f\x92\x08\x97æ{ 9¶©Î4¢\x0dt+Ñ\x84\x8fêTS\x97 y÷¶fç\x09ÞÚ;îÏã\x13F%\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" 400 -
+80.82.77.202 - - [19/Feb/2025 20:32:38] "GET /aab9 HTTP/1.1" 404 -
+65.49.1.65 - - [20/Feb/2025 00:41:31] "GET / HTTP/1.1" 200 -
+65.49.1.58 - - [20/Feb/2025 00:41:48] "GET /favicon.ico HTTP/1.1" 404 -
+167.94.138.47 - - [20/Feb/2025 04:11:55] code 400, message Bad request version ('À\x14À')
+167.94.138.47 - - [20/Feb/2025 04:11:55] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x8dÙÞx\x0bMO³\x0f»ç\x95|\x7fº\x1cÆ-\x01&OÖâ/\x95Nï?â'\x7fg ÏH\x9c®\x0e(Õ\\<·JåÇ\x0dÄ9\x83\x90RÍV1\x804w0\x03DÄ\x9eå\x95\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+167.94.138.47 - - [20/Feb/2025 04:12:02] "GET / HTTP/1.1" 200 -
+167.94.138.47 - - [20/Feb/2025 04:12:06] "GET / HTTP/1.1" 200 -
+167.94.138.47 - - [20/Feb/2025 04:12:08] "GET /favicon.ico HTTP/1.1" 404 -
+167.94.138.47 - - [20/Feb/2025 04:12:11] code 505, message Invalid HTTP version (2.0)
+167.94.138.47 - - [20/Feb/2025 04:12:11] "PRI * HTTP/2.0" 505 -
+206.168.34.51 - - [20/Feb/2025 07:22:47] code 400, message Bad request version ('À\x14À')
+206.168.34.51 - - [20/Feb/2025 07:22:47] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x9b«,µ\x17e¤\x02kza\x8eçÍó\x1cô\x90 zí ­¤\x03\x95\x08:\x17SR8 \x8b\x17ËqiM·\x82\x96\x18|\x85ç\x1aYÕ\x9cìË´%¸6ü\x85`n\x8ei|\x9a\x07\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+206.168.34.51 - - [20/Feb/2025 07:23:37] code 400, message Bad request syntax ('ZG\x00\x00\x00\x05\x00+\x0e\x01\x00')
+206.168.34.51 - - [20/Feb/2025 07:23:37] "ZG\x00\x00\x00\x05\x00+\x0e\x01\x00" 400 -
+18.188.117.89 - - [20/Feb/2025 09:04:10] code 400, message Bad request version ('À\x14À')
+18.188.117.89 - - [20/Feb/2025 09:04:10] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03[\x84\x04\x95\x8a(\x89"Ç «\x0d æÎ\x9c\x03ÿJ\x99s\x85¿¨´Ù\x13Ã-\x8fiæ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+18.188.117.89 - - [20/Feb/2025 09:04:11] "GET / HTTP/1.1" 200 -
+18.188.117.89 - - [20/Feb/2025 09:04:12] "GET / HTTP/1.1" 200 -
+18.188.117.89 - - [20/Feb/2025 09:04:12] code 400, message Bad request version ('À\x14À')
+18.188.117.89 - - [20/Feb/2025 09:04:12] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Ó¬\x1dj\x0b¬\x01Ä²n(áÀ4Õ Hï·òµ°f¨\x05\x97\x09È²o\x93&\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" 400 -
+18.188.117.89 - - [20/Feb/2025 09:04:16] code 400, message Bad request syntax ('SSH-2.0-Go')
+18.188.117.89 - - [20/Feb/2025 09:04:16] "SSH-2.0-Go" 400 -
+127.0.0.1 - - [20/Feb/2025 09:31:59] "GET /GYE HTTP/1.0" 200 -
+127.0.0.1 - - [20/Feb/2025 09:31:59] "GET /GEJ HTTP/1.0" 200 -
+27.0.238.70 - - [20/Feb/2025 09:31:59] "GET /GEJ HTTP/1.1" 200 -
+127.0.0.1 - - [20/Feb/2025 09:31:59] "GET /HSJ HTTP/1.0" 200 -
+104.248.197.5 - - [20/Feb/2025 17:26:14] "GET / HTTP/1.1" 200 -
+104.248.197.5 - - [20/Feb/2025 17:26:14] "GET /favicon.ico HTTP/1.1" 404 -
+167.94.138.173 - - [20/Feb/2025 19:03:27] code 400, message Bad request version ('À\x14À')
+167.94.138.173 - - [20/Feb/2025 19:03:27] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÜÐP±\x7fø9|÷\x0dÄ¾\x87Øì\x86$"\x16ðxsJU%2àà\x82\x14á» 5º|ëYX®á\x09ï\x82&\x11\x9aµs;z\x84 AH:!nBêÈ\x1d\x0e=º\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" 400 -
+167.94.138.173 - - [20/Feb/2025 19:03:30] code 400, message Bad request syntax ('version')
+167.94.138.173 - - [20/Feb/2025 19:03:30] "version" 400 -
+167.94.138.173 - - [20/Feb/2025 19:03:48] code 400, message Bad request syntax ('\x80\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+167.94.138.173 - - [20/Feb/2025 19:03:48] "\x80\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00" 400 -
+127.0.0.1 - - [20/Feb/2025 21:18:18] "GET /robots.txt HTTP/1.0" 404 -
+127.0.0.1 - - [20/Feb/2025 21:18:24] "GET / HTTP/1.0" 200 -
+80.82.70.133 - - [20/Feb/2025 21:39:37] code 400, message Bad request version ("¯nãY»bhlÿ(=':©\x82ÙoÈ¢×\x93\x98´ï\x80å¹\x90\x00(À")
+80.82.70.133 - - [20/Feb/2025 21:39:37] "\x16\x03\x02\x01o\x01\x00\x01k\x03\x02RHÅ\x1a#÷:Nßâ´\x82/ÿ\x09T\x9f§Äy°hÆ\x13\x8c¤\x1c="á\x1a\x98 \x84´,\x85¯nãY»bhlÿ(=':©\x82ÙoÈ¢×\x93\x98´ï\x80å¹\x90\x00(À" 400 -
+64.62.156.14 - - [20/Feb/2025 21:59:50] "GET / HTTP/1.1" 200 -
+64.62.156.20 - - [20/Feb/2025 22:00:03] "GET /favicon.ico HTTP/1.1" 404 -
+103.149.26.234 - - [21/Feb/2025 00:38:29] "GET / HTTP/1.1" 200 -
+118.26.37.111 - - [21/Feb/2025 00:38:45] "GET / HTTP/1.1" 200 -
+118.26.37.111 - - [21/Feb/2025 00:38:45] "GET /favicon.ico HTTP/1.1" 404 -
+4.255.101.65 - - [21/Feb/2025 18:17:18] "GET /v2/ HTTP/1.1" 404 -
+ * Detected change in '/home/herita/app.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/herita/app.py", line 6, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

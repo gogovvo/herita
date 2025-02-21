@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꽃다발 정보 입력</title>
+    <style>
+        /* 기존 스타일 유지 */
+        .search-input {
+            grid-column: 1 / -1;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        /* API 로딩 상태를 위한 스타일 추가 */
+        .loading-spinner {
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+    </style>
+
+    <script>
+        // 페이지 로드 시 꽃 데이터 가져오기
+        document.addEventListener('DOMContentLoaded', async () => {
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const flowerResults = document.getElementById('flowerResults');
+
+            try {
+                loadingSpinner.style.display = 'block';
+                const response = await fetch('/api/flowers');
+                const data = await response.json();
+
+                if (data.success) {
+                    renderFlowers(data.flowers);
+                    setupFlowerSelection();
+                    setupFiltering(data.flowers);
+                } else {
+                    flowerResults.innerHTML = '<p>꽃 데이터를 불러오는데 실패했습니다.</p>';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                flowerResults.innerHTML = '<p>서버 오류가 발생했습니다.</p>';
+            } finally {
+                loadingSpinner.style.display = 'none';
+            }
+        });
+
+        // 꽃 목록 렌더링 함수
+        function renderFlowers(flowers) {
+            const flowerResults = document.getElementById('flowerResults');
+            flowerResults.innerHTML = flowers.map(flower => `
+                <div class="flower-item" data-id="${flower.id}">
+                    <img src="${flower.image}" alt="${flower.name}" class="flower-image">
+                    <div class="flower-info">
+                        <div class="flower-name">${flower.name}</div>
+                        <div class="flower-tags">
+                            <span class="flower-tag">${flower.color}</span>
+                            <span class="flower-tag">${flower.shape}</span>
+                            <span class="flower-tag">${flower.season}</span>
+                        </div>
+                        <p class="flower-details">${flower.meaning}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 필터링 설정
+        function setupFiltering(flowers) {
+            const filterForm = document.getElementById('flowerFilterForm');
+            filterForm.addEventListener('input', () => {
+                const filters = {
+                    search: document.querySelector('input[name="search"]').value.toLowerCase(),
+                    color: document.querySelector('select[name="color"]').value,
+                    shape: document.querySelector('select[name="shape"]').value,
+                    season: document.querySelector('select[name="season"]').value
+                };
+
+                const filteredFlowers = flowers.filter(flower => {
+                    return (!filters.search || flower.name.toLowerCase().includes(filters.search)) &&
+                           (!filters.color || flower.color === filters.color) &&
+                           (!filters.shape || flower.shape === filters.shape) &&
+                           (!filters.season || flower.season === filters.season);
+                });
+
+                renderFlowers(filteredFlowers);
+                setupFlowerSelection();
+            });
+        }
+
+        // 꽃 선택 기능
+        function setupFlowerSelection() {
+            const selectedFlowers = new Set();
+            document.querySelectorAll('.flower-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const id = item.dataset.id;
+                    if (selectedFlowers.has(id)) {
+                        selectedFlowers.delete(id);
+                        item.classList.remove('selected');
+                    } else {
+                        selectedFlowers.add(id);
+                        item.classList.add('selected');
+                    }
+                });
+            });
+        }
+
+        // 파일 업로드 관련 코드
+        // ... (기존 파일 업로드 관련 코드 유지)
+    </script>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <!-- 업로드 섹션 -->
+            <div id="uploadSection">
+                <h2>꽃다발 사진 업로드</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="upload-area" id="dropZone">
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                        <p>클릭하거나 파일을 끌어다 놓으세요</p>
+                    </div>
+                    <div id="preview" class="preview-area" hidden></div>
+                    <div id="loading" class="loading">업로드 중...</div>
+                </form>
+            </div>
+
+            <!-- 꽃 선택 섹션 -->
+            <div id="flowerSection">
+                <h2>꽃 정보 입력</h2>
+                <form id="flowerFilterForm">
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="꽃 이름 검색..."
+                        class="search-input"
+                    >
+                    <select name="color">
+                        <option value="">색상 선택</option>
+                        <option value="빨강">빨강</option>
+                        <option value="노랑">노랑</option>
+                        <option value="분홍">분홍</option>
+                        <option value="흰색">흰색</option>
+                        <option value="보라">보라</option>
+                    </select>
+                    <select name="shape">
+                        <option value="">모양 선택</option>
+                        <option value="둥근형">둥근형</option>
+                        <option value="종형">종형</option>
+                        <option value="방사형">방사형</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    <select name="season">
+                        <option value="">계절 선택</option>
+                        <option value="봄">봄</option>
+                        <option value="여름">여름</option>
+                        <option value="가을">가을</option>
+                        <option value="겨울">겨울</option>
+                    </select>
+                </form>
+                <div class="loading-spinner" id="loadingSpinner">데이터를 불러오는 중...</div>
+                <div id="flowerResults" class="flower-grid">
+                    <!-- API에서 가져온 꽃 데이터가 여기에 표시됩니다 -->
+                </div>
+                <button id="completeSelection" class="button">선택 완료</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
